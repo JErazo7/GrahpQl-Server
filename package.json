@@ -1,0 +1,30 @@
+{
+  "name": "GraphQL",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "db:migrate": "knex migrate:latest --knexfile=db/knexfile.js",
+    "db:seed": "knex seed:run --knexfile=db/knexfile.js",
+    "knex": "knex --knexfile=db/knexfile.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "casual": "^1.6.2",
+    "express": "^4.17.1",
+    "graphql": "^14.4.2",
+    "graphql-server-express": "^1.4.1",
+    "graphql-tools": "^4.0.5",
+    "knex": "^0.19.1",
+    "objection": "^1.6.9",
+    "sqlite3": "^4.0.9"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
